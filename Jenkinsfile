@@ -10,7 +10,7 @@ pipeline {
             steps {
                 dir("SimpleMavenProject") {
                     // Clean the project
-                    bat 'C:/Users/ShriB/apache-maven-3.9.9/bin/mvn clean -f C:/ProgramData/Jenkins/.jenkins/workspace/ZensarPipelineFromGit/SimpleMavenProject/pom.xml'
+                    bat 'C:/Users/ShriB/apache-maven-3.9.9/bin/mvn clean'
                 }
             }
         }
