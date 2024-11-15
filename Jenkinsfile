@@ -19,5 +19,11 @@ pipeline {
                 echo 'Thank you'
             }
         }
+
+        stage('End') {
+            steps {
+                echo '****The End****'
+            }
+        }
     }
 }
