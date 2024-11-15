@@ -1,35 +1,22 @@
 pipeline {
     agent any
 
-    environment {
-        JAVA_HOME = "C:/Program Files/Java/jdk-17"
-    }
-
     stages {
-        stage('Clean Stage') {
+        stage('Hello') {
             steps {
-                dir("SimpleMavenProject") {
-                    // Clean the project
-                    bat 'C:/Users/ShriB/apache-maven-3.9.9/bin/mvn clean'
-                }
+                echo 'Hello'
             }
         }
 
-        stage('Compile Stage') {
+        stage('Hi') {
             steps {
-                dir("SimpleMavenProject") {
-                    // Compile the project
-                    bat 'C:/Users/ShriB/apache-maven-3.9.9/bin/mvn compile'
-                }
+                echo 'How are you'
             }
         }
 
-        stage('Install Stage') {
+        stage('Bye') {
             steps {
-                dir("SimpleMavenProject") {
-                    // Install the project
-                    bat 'C:/Users/ShriB/apache-maven-3.9.9/bin/mvn install'
-                }
+                echo 'Thank you'
             }
         }
     }
